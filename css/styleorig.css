@@ -1,0 +1,540 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #002225;
+  height: 100vh;
+}
+
+.box {
+  width: 11.3%;
+}
+
+.box img {
+  width: 100%;
+}
+
+.box .front,
+.box .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 4s;
+  backface-visibility: hidden;
+
+  text-align: center;
+}
+
+.box .back p {
+  padding: 15%;
+  font-family: 'Questrial', sans-serif;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+.box .lesstop p {
+  padding-top: 45%;
+}
+
+.box .front {
+  transform: perspective(1000px) rotateY(0deg);
+  z-index: 2;
+}
+
+.box .back {
+  transform: perspective(1000px) rotateY(180deg);
+  z-index: 1;
+}
+
+.box:hover .front {
+  transform: perspective(1000px) rotateY(-180deg);
+  z-index: 2;
+}
+
+.box:hover .back {
+  transform: perspective(1000px) rotateY(0deg);
+  z-index: 1;
+}
+
+
+#box1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#box2 {
+  position: absolute;
+  top: 0;
+  left: 11.3%;
+}
+
+#box3 {
+  position: absolute;
+  top: 0;
+  left: 22.6%;
+}
+
+#box4 {
+  position: absolute;
+  top: 0;
+  left: 33.9%;
+}
+
+#box5 {
+  position: absolute;
+  top: 0;
+  left: 45.2%;
+}
+
+#box6 {
+  position: absolute;
+  top: 0;
+  left: 56.5%;
+}
+
+#box7 {
+  position: absolute;
+  top: 0;
+  left: 67.8%;
+}
+
+#box8 {
+  position: absolute;
+  top: 0;
+  left: 79.1%;
+}
+
+#box9 {
+  position: absolute;
+  top: 0;
+  left: 90.3%;
+}
+
+/* this is the second row */
+
+#box2-1 {
+  position: absolute;
+  top: 11.3vw;
+  left: 0;
+}
+
+#box2-2 {
+  position: absolute;
+  top: 11.3vw;
+  left: 11.3%;
+}
+
+#box2-3 {
+  position: absolute;
+  top: 11.3vw;
+  left: 22.6%;
+}
+
+#box2-4 {
+  position: absolute;
+  top: 11.3vw;
+  left: 33.9%;
+}
+
+#box2-5 {
+  position: absolute;
+  top: 11.3vw;
+  left: 45.2%;
+}
+
+#box2-6 {
+  position: absolute;
+  top: 11.3vw;
+  left: 56.5%;
+}
+
+#box2-7 {
+  position: absolute;
+  top: 11.3vw;
+  left: 67.8%;
+}
+
+#box2-8 {
+  position: absolute;
+  top: 11.3vw;
+  left: 79.1%;
+}
+
+#box2-9 {
+  position: absolute;
+  top: 11.3vw;
+  left: 90.3%;
+}
+
+/* this is the third row */
+
+#box3-1 {
+  position: absolute;
+  top: 22.6vw;
+  left: 0;
+}
+
+#box3-2 {
+  position: absolute;
+  top: 22.6vw;
+  left: 11.3%;
+}
+
+#box3-3 {
+  position: absolute;
+  top: 22.6vw;
+  left: 22.6%;
+}
+
+#box3-4 {
+  position: absolute;
+  top: 22.6vw;
+  left: 33.9%;
+}
+
+#box3-5 {
+  position: absolute;
+  top: 22.6vw;
+  left: 45.2%;
+}
+
+#box3-6 {
+  position: absolute;
+  top: 22.6vw;
+  left: 56.5%;
+}
+
+#box3-7 {
+  position: absolute;
+  top: 22.6vw;
+  left: 67.8%;
+}
+
+#box3-8 {
+  position: absolute;
+  top: 22.6vw;
+  left: 79.1%;
+}
+
+#box3-9 {
+  position: absolute;
+  top: 22.6vw;
+  left: 90.3%;
+}
+
+
+/* this is the fourth row */
+
+#box4-1 {
+  position: absolute;
+  top: 33.9vw;
+  left: 0;
+}
+
+#box4-2 {
+  position: absolute;
+  top: 33.9vw;
+  left: 11.3%;
+}
+
+#box4-3 {
+  position: absolute;
+  top: 33.9vw;
+  left: 22.6%;
+}
+
+#box4-4 {
+  position: absolute;
+  top: 33.9vw;
+  left: 33.9%;
+}
+
+#box4-5 {
+  position: absolute;
+  top: 33.9vw;
+  left: 45.2%;
+}
+
+#box4-6 {
+  position: absolute;
+  top: 33.9vw;
+  left: 56.5%;
+}
+
+#box4-7 {
+  position: absolute;
+  top: 33.9vw;
+  left: 67.8%;
+}
+
+#box4-8 {
+  position: absolute;
+  top: 33.9vw;
+  left: 79.1%;
+}
+
+#box4-9 {
+  position: absolute;
+  top: 33.9vw;
+  left: 90.3%;
+}
+
+
+/* this is the fifth row */
+
+#box5-1 {
+  position: absolute;
+  top: 45.1vw;
+  left: 0;
+}
+
+#box5-2 {
+  position: absolute;
+  top: 45.1vw;
+  left: 11.3%;
+}
+
+#box5-3 {
+  position: absolute;
+  top: 45.1vw;
+  left: 22.6%;
+}
+
+#box5-4 {
+  position: absolute;
+  top: 45.1vw;
+  left: 33.9%;
+}
+
+#box5-5 {
+  position: absolute;
+  top: 45.1vw;
+  left: 45.2%;
+}
+
+#box5-6 {
+  position: absolute;
+  top: 45.1vw;
+  left: 56.5%;
+}
+
+#box5-7 {
+  position: absolute;
+  top: 45.1vw;
+  left: 67.8%;
+}
+
+#box5-8 {
+  position: absolute;
+  top: 45.1vw;
+  left: 79.1%;
+}
+
+#box5-9 {
+  position: absolute;
+  top: 45.1vw;
+  left: 90.3%;
+}
+
+/* this is the sixth row */
+
+#box6-1 {
+  position: absolute;
+  top: 56.3vw;
+  left: 0;
+}
+
+#box6-2 {
+  position: absolute;
+  top: 56.3vw;
+  left: 11.3%;
+}
+
+#box6-3 {
+  position: absolute;
+  top: 56.3vw;
+  left: 22.6%;
+}
+
+#box6-4 {
+  position: absolute;
+  top: 56.3vw;
+  left: 33.9%;
+}
+
+#box6-5 {
+  position: absolute;
+  top: 56.3vw;
+  left: 45.2%;
+}
+
+#box6-6 {
+  position: absolute;
+  top: 56.3vw;
+  left: 56.5%;
+}
+
+#box6-7 {
+  position: absolute;
+  top: 56.3vw;
+  left: 67.8%;
+}
+
+#box6-8 {
+  position: absolute;
+  top: 56.3vw;
+  left: 79.1%;
+}
+
+#box6-9 {
+  position: absolute;
+  top: 56.3vw;
+  left: 90.3%;
+}
+
+/* this is the seventh row */
+
+#box7-1 {
+  position: absolute;
+  top: 67.5vw;
+  left: 0;
+}
+
+#box7-2 {
+  position: absolute;
+  top: 67.5vw;
+  left: 11.3%;
+}
+
+#box7-3 {
+  position: absolute;
+  top: 67.5vw;
+  left: 22.6%;
+}
+
+#box7-4 {
+  position: absolute;
+  top: 67.5vw;
+  left: 33.9%;
+}
+
+#box7-5 {
+  position: absolute;
+  top: 67.5vw;
+  left: 45.2%;
+}
+
+#box7-6 {
+  position: absolute;
+  top: 67.5vw;
+  left: 56.5%;
+}
+
+#box7-7 {
+  position: absolute;
+  top: 67.5vw;
+  left: 67.8%;
+}
+
+#box7-8 {
+  position: absolute;
+  top: 67.5vw;
+  left: 79.1%;
+}
+
+#box7-9 {
+  position: absolute;
+  top: 67.5vw;
+  left: 90.3%;
+}
+
+
+/* this is the eight row */
+
+#box8-1 {
+  position: absolute;
+  top: 78.7vw;
+  left: 0;
+}
+
+#box8-2 {
+  position: absolute;
+  top: 78.7vw;
+  left: 11.3%;
+}
+
+#box8-3 {
+  position: absolute;
+  top: 78.7vw;
+  left: 22.6%;
+}
+
+#box8-4 {
+  position: absolute;
+  top: 78.7vw;
+  left: 33.9%;
+}
+
+#box8-5 {
+  position: absolute;
+  top: 78.7vw;
+  left: 45.2%;
+}
+
+#box8-6 {
+  position: absolute;
+  top: 78.7vw;
+  left: 56.5%;
+}
+
+#box8-7 {
+  position: absolute;
+  top: 78.7vw;
+  left: 67.8%;
+}
+
+#box8-8 {
+  position: absolute;
+  top: 78.7vw;
+  left: 79.1%;
+}
+
+#box8-9 {
+  position: absolute;
+  top: 78.7vw;
+  left: 90.3%;
+}
+
+#button1 {
+  position: absolute;
+  top: 45.1vw;
+  left: 11.3%;
+}
+
+#button2 {
+  position: absolute;
+  top: 45.1vw;
+  left: 45.2%;
+}
+
+#button3 {
+  position: absolute;
+  top: 45.1vw;
+  left: 79.1%;
+}
+
+#smallbutton {
+  width: 50%;
+  padding-top: 20%;
+  padding-left: 10%;
+}
+
+#title {
+  position: absolute;
+  top: 2vw;
+  left: 79.1%;
+  width: 20vw;
+}
+''

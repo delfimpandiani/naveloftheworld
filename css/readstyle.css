@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #002225;
+  height: 100vh;
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.7em;
+
+}
+
+
+#smallScreen{display:none;}
+#bigScreen{display:block;}
+
+
+@media screen and (max-aspect-ratio: 16/10) {
+  #smallScreen {
+    display: block;
+    font-size: 2rem;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+  }
+  #smallScreen img {
+    width: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #bigScreen {display:none;}
+}
+
+
+.box {
+  width: 11.3%;
+  font-family: 'Inconsolata', monospace;
+}
+
+.box img {
+  width: 100%;
+}
+
+.box .front,
+.box .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 2s;
+  backface-visibility: hidden;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+}
+
+.box p {
+  font-family: 'Inconsolata', monospace;
+  align-items: center;
+  font-size: 0.9em;
+  color: black;
+  width: 100%;
+  padding: 0.4em;
+}
+
+.box .back p {
+  font-size: 1.1em;
+  font-family: 'Inconsolata', monospace;
+}
+
+
+.box .front {
+  transform: perspective(1000px) rotateY(0deg);
+  z-index: 2;
+  font-family: 'Inconsolata', monospace;
+}
+
+.box .back {
+  transform: perspective(1000px) rotateY(180deg);
+  z-index: 1;
+}
+
+.box:hover .front {
+  transform: perspective(1000px) rotateY(-180deg);
+  z-index: 2;
+}
+
+.box:hover .back {
+  transform: perspective(1000px) rotateY(0deg);
+  z-index: 1;
+}
+
+#maintext {
+  position: absolute;
+  top: 11.3vw;
+  left: 23.9%;
+  width: 53.9vw;
+  font-family: 'Inconsolata', monospace;
+}
+
+#maintext p {
+  font-family: 'Inconsolata', monospace;
+}
+#box2-4 {
+  position: absolute;
+  top: 11.3vw;
+  left: 33.9%;
+}
+
+#box2-5 {
+  position: absolute;
+  top: 11.3vw;
+  left: 45.2%;
+}
+
+#box2-6 {
+  position: absolute;
+  top: 11.3vw;
+  left: 56.5%;
+}
+
+/* this is the third row */
+
+#box3-4 {
+  position: absolute;
+  top: 22.6vw;
+  left: 33.9%;
+}
+
+#box3-5 {
+  position: absolute;
+  top: 22.6vw;
+  left: 45.2%;
+}
+
+#box3-6 {
+  position: absolute;
+  top: 22.6vw;
+  left: 56.5%;
+}
+
+
+/* this is the fourth row */
+
+#box4-4 {
+  position: absolute;
+  top: 33.9vw;
+  left: 33.9%;
+}
+
+#box4-5 {
+  position: absolute;
+  top: 33.9vw;
+  left: 45.2%;
+}
+
+#box4-6 {
+  position: absolute;
+  top: 33.9vw;
+  left: 56.5%;
+}
+
+
+/* --------------------------SMALL BACK SQUARE-------------------------- */
+#boxreadback {
+  position: absolute;
+  bottom: 2vw;
+  left: 3.77vw;
+  width: 11.31vw;
+  height: 11.31vw;
+}
+
+/* --------------------------END OF SMALL BACK SQUARE-------------------------- */
+
+/* --------------------------SMALL NEXT SQUARE-------------------------- */
+
+
+#boxreadnext {
+  position: absolute;
+  top: 2vw;
+  left: 84.92vw;
+  width: 11.31vw;
+  height: 11.31vw;
+}
+/* --------------------------END OF NEXT BACK SQUARE-------------------------- */
+
+
+#title {
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+  width: 22vw;
+}
+
+#titlerapa {
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+  width: 11vw;
+}
+
+#thisbutton {
+  position: absolute;
+  top: 12vw;
+  left: 4vw;
+  width: 6vw;
+}
+
+#backbutton {
+  position: absolute;
+  top: 15vw;
+  left: 4vw;
+  width: 6vw;
+}
+
+#nextbutton {
+  position: absolute;
+  top: 18vw;
+  left: 4vw;
+  width: 6vw;
+}
+
+#readtitle {
+  position: absolute;
+  top: 25vw;
+  right: 3vw;
+  width: 14vw;
+}
+.textt {
+  font-family: 'Inconsolata', monospace;
+}
